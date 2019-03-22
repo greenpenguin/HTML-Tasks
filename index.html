@@ -45,7 +45,7 @@
                </h2>
                <p align = "justify" style="text-indent: 5%">
                   <img src="https://i.ytimg.com/vi/lAseU2zPZi4/maxresdefault.jpg" width="150" height="100" align = "right" hspace="10" vspace="5" 
-                       alt="Три пингвина, потому что я не нашла такой же рисунок, как в задании :)">
+                     alt="Три пингвина, потому что я не нашла такой же рисунок, как в задании :)">
                   Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает 
                   более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
                   "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве 
@@ -83,25 +83,22 @@
                </table>
             </td>
             <td width="200">
-               <p>Логин:</p>
-               <p>
-                  <input type="text" size="40" value="login">
-               </p>
-               <p>Пароль:</p>
-               <p>
-                  <input type="text" size="40" value="******">
-               </p>
-               <p>
-                  <select>
-                     <option>Admin</option>
-                     <option>Tester</option>
-                     <option>User</option>
-                  </select>
-               </p>
-               <p>
-                  <input type="checkbox"> Запомни меня
-               </p>
-               <p><input type="submit" value="Вход" ></p>
+               <form action="action_form.php" method="POST">
+                  <p>
+                     Логин:<br>
+                     <input type="text" name="log" value="login"><br>
+                     Пароль:<br>
+                     <input type="password" name="pass" value="******"><br>
+                     <select>
+                        <option>Admin</option>
+                        <option>Tester</option>
+                        <option>User</option>
+                     </select>
+                     <br>
+                     <input type="checkbox" name="check"> Запомни меня<br>
+                     <input type="submit" value="Вход">
+                  </p>
+               </form>
             </td>
          </tr>
          <tr>
