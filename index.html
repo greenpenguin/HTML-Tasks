@@ -18,26 +18,14 @@
          <tr>
             <td width="200" >
                <h2>Меню</h2>
-               <dl style="list-style-type: none" align="left">
-                  <a href="http://example.com" target="_blank">
-                     <dt>Главная</dt>
-                  </a>
-                  <a href="http://example.com" target="_blank">
-                     <dt>Продукты</dt>
-                  </a>
-                  <a href="http://example.com" target="_blank">
-                     <dt>Кафе</dt>
-                  </a>
-                  <a href="http://example.com" target="_blank">
-                     <dt>Рестораны</dt>
-                  </a>
-                  <a href="http://example.com" target="_blank">
-                     <dt>Вопросы</dt>
-                  </a>
-                  <a href="http://example.com" target="_blank">
-                     <dt>Акции</dt>
-                  </a>
-               </dl>
+               <ul align="left">
+                    <li><a href="http://example.com" target="_blank">Главная</a></li>
+                    <li><a href="http://example.com" target="_blank">Продукты</a></li>
+                    <li><a href="http://example.com" target="_blank">Кафе</a></li>
+                    <li><a href="http://example.com" target="_blank">Рестораны</a></li>
+                    <li><a href="http://example.com" target="_blank">Вопросы</a></li>
+                    <li><a href="http://example.com" target="_blank">Акции</a></li>
+               </ul>
             </td>
             <td>
                <h2>
@@ -85,17 +73,17 @@
             <td width="200">
                <form action="action_form.php" method="POST">
                   <p>
-                     Логин:<br>
-                     <input type="text" name="log" value="login"><br>
-                     Пароль:<br>
-                     <input type="password" name="pass" value="******"><br>
-                     <select>
+                    <label for="log">Логин:</label><br>
+                     <input type="text" name="log" value="login" id="log"><br>
+                    <label for="pass">Пароль:</label><br>
+                     <input type="password" name="pass" value="******" id="pass"><br>
+                     <select name="slct">
                         <option>Admin</option>
                         <option>Tester</option>
                         <option>User</option>
                      </select>
                      <br>
-                     <input type="checkbox" name="check"> Запомни меня<br>
+                    <input type="checkbox" name="check" id="check"><label for="check">Запомни меня</label><br>
                      <input type="submit" value="Вход">
                   </p>
                </form>
