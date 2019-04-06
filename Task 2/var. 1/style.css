@@ -1,0 +1,32 @@
+.circle{
+    border-radius: 50%;
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: white;
+}
+
+.horizontal-line{
+    display: inline-block;
+    background-color: gainsboro;
+    width: 40px;
+    height: 8px;
+
+}
+
+.parent{
+    font-size: 0px;
+}
+
+.blueviolet{
+    background-color: mediumorchid;
+}
+
+.gainsboro{
+    background-color: gainsboro;
+    color: black;
+}
