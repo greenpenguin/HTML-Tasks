@@ -1,0 +1,89 @@
+.switchers {
+    margin: 20px auto;
+    width: 600px;
+    height: 380px;
+    position: relative;
+  }
+  
+  .switchers .fone {
+    width: 100%;
+    height: 100%;
+    background: url(https://lifeglobe.net/x/entry/639/47451f780368_3.jpg) no-repeat;
+  }
+  
+  .switchers input[value='pic2']:checked~.fone {
+    background: url(https://avatars.mds.yandex.net/get-pdb/1384286/b803693a-6b8b-428f-87b4-dc1b857ca87e/orig) no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .switchers input[value='pic3']:checked~.fone {
+    background: url(https://4tololo.ru/files/images/20173103145135_0.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .switchers input[value='pic4']:checked~.fone {
+    background: url(http://www.vokrugsveta.ru/img/cmn/2014/03/04/012.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .switchers input[value='pic5']:checked~.fone {
+    background: url(http://loveopium.ru/content/2015/02/pingvin/00s.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .switchers input[type='radio'] {
+    display: none;
+  }
+  
+  .switchers>label, .switchers input:checked~.fone::after {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 90%;
+    left: 40%;
+  }
+  
+  .switchers>label {
+    background: black;
+    box-shadow: 0 0 0 2px white;
+  }
+  
+  .switchers input:checked~.fone::after {
+    content: '';
+    background: red;
+    box-shadow: 0 0 7px 6px white;
+  }
+  
+  label[for='pic1'], .switchers input[value='pic1']:checked~.fone::after {
+    left: 40%;
+  }
+  
+  label[for='pic2'], .switchers input[value='pic2']:checked~.fone::after {
+    left: 45%;
+  }
+  
+  label[for='pic3'], .switchers input[value='pic3']:checked~.fone::after {
+    left: 50%;
+  }
+  
+  label[for='pic4'], .switchers input[value='pic4']:checked~.fone::after {
+    left: 55%;
+  }
+  
+  label[for='pic5'], .switchers input[value='pic5']:checked~.fone::after {
+    left: 60%;
+  }
+  
+  .switchers label:hover {
+    cursor: pointer;
+  }
+  
+  .switchers input[type='checkbox'] {
+    display: none;
+  }
+  
+  .switchers input[value='pic1']:checked~label[for='pic1'], .switchers input[value='pic2']:checked~label[for='pic2'], .switchers input[value='pic3']:checked~label[for='pic3'], .switchers input[value='pic4']:checked~label[for='pic4'], .switchers input[value='pic5']:checked~label[for='pic5'] {
+    display: none;
+  }
